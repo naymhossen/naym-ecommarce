@@ -1,0 +1,67 @@
+/* shared style properties */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Work Sans', sans-serif;
+}
+.primary-btn{
+    color: #fff;
+    background-color: #e02c6d;
+    padding: 10px 24px;
+    border-radius: 3rem;
+    border: none;
+}
+
+
+/* nav style */
+
+nav{margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav > ul{
+    display: flex;
+}
+nav li {
+    list-style: none;
+    margin-right: 2.20rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.nav-titl{
+    color: #3a3a3a;
+    font-size: 1.50rem;
+    font-weight: 700;
+}
+
+/* Banner style start */
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    border: 1px solid gray;
+}
+.banner-text{
+    margin-left: 5rem;
+}
+.banner-title{
+    color: #3a3a3a;
+    font-size: 3.20rem;
+    font-weight: 700;
+    line-height: 5rem;
+}
+.banner-detsils{
+    color: #3a3a3a;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.banner-photo{
+    margin-right: 5rem;
+    background-image: url('/images/Circle\ design.svg');
+}
+
+/* ecommarce style */
