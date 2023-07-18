@@ -1,19 +1,17 @@
 /* shared style properties */
 
 *{
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     font-family: 'Work Sans', sans-serif;
 }
 
-
-
 /* nav style */
 
 nav{
-    height: 10vh;
-    width: 100%;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -38,8 +36,8 @@ nav li {
 .banner-container{
     display: flex;
     align-items: center;
-    height: 80vh;
-    width: 100%;
+    margin: 50px auto;
+    margin-bottom: 4rem;
 }
 .banner-text{
     margin-left: 5rem;
@@ -67,20 +65,33 @@ nav li {
     margin-top:  1rem;
 }
 .banner-photo{
-    margin-right: 5rem;
     background-image: url('/images/Circle\ design.svg');
+    background-repeat: no-repeat;
+}
+.banner-img{
+    width: 500px;
 }
 
 /* ecommarce style */
-
 .ecomarce-container{
-    width: 90%;
-    height: 30vh;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    display: flex;
     align-items: center;
-    margin: 0 auto;
-    margin-bottom: 5rem;
+    justify-content: center;
+    gap: 4rem;
+    padding: 50px 0;
+}
+.first-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.second-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
 }
 
 /*         <!-- Popular Collection style -->
@@ -89,20 +100,18 @@ nav li {
  .collection-title{
     text-align: center;
     color: #3a3a3a;
-    font-size: 1.80rem;
+    font-size: 2rem;
     font-size: 600;
     line-height: 4rem;
-    margin-bottom: -7rem;
+    padding-top: 7rem;
+    margin-bottom: 2rem;
 }
  .collection-contaier{
-    height: 230vh;
-    width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto;
-    padding: 20px 20px;
-    gap: 20px;
-    margin-top: 7rem;
+    padding: 40px 40px;
+    gap: 1rem;
+    margin-left: 2rem;
 }
 .card-box{
     width: 320px;
@@ -113,9 +122,9 @@ nav li {
 }
 .collection-img{
     position: relative;
-    padding-top: 17px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .product-name{
     color: #18191f;
@@ -135,6 +144,9 @@ nav li {
     margin-left:1rem ;
     line-height:2rem ;
 }
+.checked {
+    color: orange;
+}
 .product-detsil{
     color: #787878;
     font-size: 1rem;
@@ -148,15 +160,13 @@ nav li {
     padding: 10px 24px;
     border-radius: 3rem;
     border: none;
-    margin-left: 61.75rem;
+    margin-left: 65.75rem;
 }
 
 
 /* VLOGING CONTSINER STYLE */
 
 .blog-container{
-    width: 80%;
-    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,14 +199,11 @@ nav li {
 /*  <!-- footer setion style --> */
 
 .footer-container{
-    width: 100%;
-    height: 50vh;
     background-color:gray;
     color: white;
     text-align: center;
 }
 .footer-content{
-    width: 50%;
     padding-top: 100px;
     margin: 0px auto;
 }
@@ -216,84 +223,57 @@ nav li {
     align-items: center;
     gap: 1rem;
     justify-items: center;
-    width: 30%;
     margin-left: 35.28rem;
     margin-top: 1rem;
+    padding-bottom: 2rem;
 }
 
-.checked {
-    color: orange;
-}
+
 
 
 /* Responsive Style */
 
 /* Extra small devices (phones, 600px and down) */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
 
-    nav, nav>ul {
+    nav > h4 {
+         text-align: center;
+    }
+    nav{
+        margin-top: 0px;
+        height: 30vh;
+        width: 100%;
         flex-direction: column;
+        gap: 2rem;
+        
+    }
+    nav > ul {
+        margin-top: -100px;
+        padding: 10px;
+    }
 
-    }
-    nav > ul{
-        align-items: center;
-        margin-top: 1rem;
-    }
+    /* Nav bar container END */
+
+    /* .banner-container{
+        
+    } */
     .banner-img{
-        width: 350px;
+        background-image: url('./images/Circle design.svg');
+        background-repeat: no-repeat;
     }
     .banner-photo{
-        background-image: none;
+        background: none;
     }
-    .banner-container{
-        flex-direction: column-reverse;
-        margin-top: 17rem;
-    }
-    .banner-text{
-        position: relative;
-        text-align: center;
-        margin: 0 auto;
-    }
-    .banner-title{
-        position: relative;
-        align-items: center;
-        margin: 0 auto;
-    }
-    .ecomarce-container {
-        display: grid;
-        grid-template-columns: repeat(2, .5fr);
-        width: 90%;
-        height: 100vh;
-        align-items: center;
-        margin: 0 auto;
-        border: none;
-        column-gap: -10px;
-    }
-    .collection-contaier{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        align-items: center;
-        margin: 0 auto;
-        margin-top: 130px;
-        position: relative;
-    }
-
-    .blog-container{
-        flex-direction: column;
-        margin-top: 3050px;
-        width: 100%;
-        height: 100vh;
-        margin-bottom: 50px;
+    .banner-btn{
+        margin-bottom: 10px;
     }
 
 
-
-
-
+    /* BanNER CONTAINER END */
 }
 
-@media only screen and (min-width: 600px) and (max-width: 992px){
+@media only screen and (min-width: 576px) and (max-width: 992px){
 
 
 
