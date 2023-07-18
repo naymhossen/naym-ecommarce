@@ -18,6 +18,7 @@ nav{
 }
 nav > ul{
     display: flex;
+    align-items: center;
 }
 nav li {
     list-style: none;
@@ -69,6 +70,7 @@ nav li {
 }
 
 /* ecommarce style */
+
 .ecomarce-container{
     display: flex;
     align-items: center;
@@ -76,6 +78,10 @@ nav li {
     gap: 4rem;
     padding: 50px 0;
 }
+/* .ecomarce-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+} */
 .first-box{
     display: flex;
     align-items: center;
@@ -105,8 +111,6 @@ nav li {
  .collection-contaier{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 40px 40px;
-    gap: 1rem;
     margin-left: 2.50rem;
 }
 .card-box{
@@ -237,7 +241,8 @@ nav li {
         
     }
     nav > ul {
-        padding: 10px;
+        flex-direction: column;
+        gap: 0.50rem;
     }
 
     /* Nav bar container END */
@@ -252,55 +257,51 @@ nav li {
     }
     .banner-title{
         text-align: center;
-        font-size:2rem ;
+        font-size:1.50rem ;
     }
     .banner-img{
-        background-image: url('./images/Circle design.svg');
-        background-repeat: no-repeat;
+        width: 300px;
     }
     .banner-photo{
-        background: none;
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
     }
     .banner-btn{
         margin-bottom: 10px;
     }
     .ecomarce-container{
-        display: grid;
+        display:grid;
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .first-box, .second-box{
+        flex-direction: column;
     }
     .collection-contaier{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin-left: 5rem;
     }
     .see-btn{
-        margin-left: 20rem;
+        margin-top: 1rem;
+        margin-left: 15rem;
     }
     .blog-container{
         flex-direction: column-reverse;
         margin: 0 auto;
     }
-    .blog-btn{
-        margin-left: 11rem;
-    }
     .blog-title{
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.50rem;
         line-height: normal;
     }
-    .blog-img{
-        margin: 0 auto;
+    .blog-photo{
+        width: 300px;
     }
     .social-link{
-        margin-left: 13.50rem;
+        margin-left: 7rem;
     }
 
 
     /* BanNER CONTAINER END */
-}
-
-@media only screen and (min-width: 576px) and (max-width: 992px){
-
-
-
 }
