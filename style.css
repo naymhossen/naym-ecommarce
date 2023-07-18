@@ -78,10 +78,6 @@ nav li {
     gap: 4rem;
     padding: 50px 0;
 }
-/* .ecomarce-container{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-} */
 .first-box{
     display: flex;
     align-items: center;
@@ -271,12 +267,7 @@ nav li {
         margin-bottom: 10px;
     }
     .ecomarce-container{
-        display:grid;
-        grid-template-columns: repeat(1,1fr);
-    }
-
-    .first-box, .second-box{
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     .collection-contaier{
         display: grid;
