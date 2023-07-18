@@ -36,18 +36,14 @@ nav li {
 .banner-container{
     display: flex;
     align-items: center;
-    margin: 50px auto;
     margin-bottom: 4rem;
-}
-.banner-text{
-    margin-left: 5rem;
+    margin-top: 4rem;
+    padding: 0 50px;
 }
 .banner-title{
     color: #3a3a3a;
     font-size: 3.20rem;
     font-weight: 700;
-    line-height: 5rem;
-    position: relative;
 }
 .banner-detsils{
     position: relative;
@@ -111,7 +107,7 @@ nav li {
     grid-template-columns: repeat(3, 1fr);
     padding: 40px 40px;
     gap: 1rem;
-    margin-left: 2rem;
+    margin-left: 2.50rem;
 }
 .card-box{
     width: 320px;
@@ -172,15 +168,8 @@ nav li {
     justify-content: center;
     padding: 50px 50px;
     margin: 0 auto;
+    gap: 3rem;
 
-}
-.blog-img{
-    height: auto;
-    width: 50%;
-}
-.blog-contant{
-    height: auto;
-    width: 50%;
 }
 .blog-title{
     color: black;
@@ -239,25 +228,32 @@ nav li {
 
     nav > h4 {
          text-align: center;
+         margin-top: 3rem;
     }
     nav{
-        margin-top: 0px;
-        height: 30vh;
-        width: 100%;
+        margin: 0 auto;
         flex-direction: column;
         gap: 2rem;
         
     }
     nav > ul {
-        margin-top: -100px;
         padding: 10px;
     }
 
     /* Nav bar container END */
 
-    /* .banner-container{
-        
-    } */
+    .banner-container{
+        flex-direction: column-reverse;
+        align-items: center;
+    } 
+    .banner-text{
+        padding-top: 2rem;
+        text-align: center;
+    }
+    .banner-title{
+        text-align: center;
+        font-size:2rem ;
+    }
     .banner-img{
         background-image: url('./images/Circle design.svg');
         background-repeat: no-repeat;
@@ -267,6 +263,36 @@ nav li {
     }
     .banner-btn{
         margin-bottom: 10px;
+    }
+    .ecomarce-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .collection-contaier{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 5rem;
+    }
+    .see-btn{
+        margin-left: 20rem;
+    }
+    .blog-container{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+    .blog-btn{
+        margin-left: 11rem;
+    }
+    .blog-title{
+        text-align: center;
+        font-size: 2rem;
+        line-height: normal;
+    }
+    .blog-img{
+        margin: 0 auto;
+    }
+    .social-link{
+        margin-left: 13.50rem;
     }
 
 
